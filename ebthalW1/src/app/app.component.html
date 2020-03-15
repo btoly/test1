@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+ <div> <app-header></app-header></div> 
+ <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card my-5">
+        <div class="card-body">
+          <h2 class="card-title text-center text-white py-3">{{ title }}</h2>
+          <ul class="text-center list-inline py-3">
+            <li class="list-inline-item">
+              <a routerLink="/company" class="btn btn-info">List companeis</a>
+                </li>
+                <li class="list-inline-item">
+                  <a routerLink="/addcompany" class="btn btn-info">Add company</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                      <a routerLink="/addeducation" class="btn btn-info">Add educations</a>
+                        </li>
+          </ul>
+        </div>
+      </div>
+      <router-outlet></router-outlet>
+     
+    </div>
+  </div>
+</div>  
+
+
+
+
+
+

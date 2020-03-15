@@ -1,0 +1,35 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">cr</th>
+          <th scope="col">Company name</th>
+          <th scope="col">startDate</th>
+          <th scope="col">endDate</th>
+          <th scope="col">phoneNumber</th>
+          <th scope="col">email</th>
+          <th scope="col">address</th>
+          <th>Actions</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let company of company">
+          <td>{{ company.cr}}</td>
+          <td>{{ company.comanyName }}</td>
+          <td>{{ company.startDate }}</td>
+          <td>{{ company.endDate }}</td>
+          <td>{{ company.phoneNumber }}</td>
+          <td>{{ company.email}}</td>
+          <td>{{ company.address }}</td>
+          <td><button (click)="deleteEmployee(company.cr)" class="btn btn-danger">Delete</button>  </td>
+
+
+            <td><button (click)="updateEmployee(company.cr)" class="btn btn-info" style="margin-left: 10px">Update</button>  </td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
